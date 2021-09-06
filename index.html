@@ -12,7 +12,7 @@
     <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
     <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
-    <title>Document</title>
+    <title>首页</title>
     <script src="./js/zepto.min.js"></script>
     <script src="./js/flexible.js"></script>
     <!-- <script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/1.7.1/jquery.min.js"></script> -->
@@ -84,33 +84,33 @@
                     <span>立即参与</span>
                 </div>
             </div>
-            <div class="content-line4">
+            <div class="content-line4 birth">
                 <div class="line4-img">
                     <img src="./images/16.jpg" alt="">
                 </div>
                 <div class="line4-content">
-                    <p>小学老师数理思维龚老师<span>￥168起</span></p>
-                    <p><span>中坚老师</span><span>教龄10年</span><span>已授1013课</span></p>
+                    <p class="na">小学老师数理思维龚老师<span>￥168起</span></p>
+                    <p class="te"><span>中坚老师</span><span>教龄10年</span><span>已授1013课</span></p>
                     <p class="classInfo"><span>在线课</span><span>双线课</span><span>提升解题技巧</span><span>基础提高</span></p>
                 </div>
             </div>
-            <div class="content-line4">
+            <div class="content-line4 birth">
                 <div class="line4-img">
                     <img src="./images/15.jpg" alt="">
                 </div>
                 <div class="line4-content">
-                    <p>小学老师数理思维龚老师<span>￥168起</span></p>
-                    <p><span>中坚老师</span><span>教龄10年</span><span>已授1013课</span></p>
+                    <p class="na">小学老师数理思维龚老师<span>￥168起</span></p>
+                    <p class="te"><span>中坚老师</span><span>教龄10年</span><span>已授1013课</span></p>
                     <p class="classInfo"><span>在线课</span><span>双线课</span><span>提升解题技巧</span><span>基础提高</span></p>
                 </div>
             </div>
-            <div class="content-line4">
+            <div class="content-line4 birth">
                 <div class="line4-img">
                     <img src="./images/14.jpg" alt="">
                 </div>
                 <div class="line4-content">
-                    <p>小学老师数理思维龚老师<span>￥168起</span></p>
-                    <p><span>中坚老师</span><span>教龄10年</span><span>已授1013课</span></p>
+                    <p class="na">小学老师数理思维龚老师<span>￥168起</span></p>
+                    <p class="te"><span>中坚老师</span><span>教龄10年</span><span>已授1013课</span></p>
                     <p class="classInfo"><span>在线课</span><span>双线课</span><span>提升解题技巧</span><span>基础提高</span></p>
                 </div>
             </div>
@@ -134,7 +134,7 @@
 	<script type="text/javascript" src="./js/zySearch.js"></script>
     <script src="./js/index.js"></script>
     <script type="text/javascript">
-	
+	    
 		$("#zySearch").zySearch({
 			"width":"355",
 			"height":"33",
@@ -149,7 +149,7 @@
                 deleteOne();
                 $(".clear").show();
 			}
-		});
+		}); 
         //清除单个记录
         function deleteOne() {
             $(".history .item i").click(function () {
@@ -180,6 +180,7 @@
             // console.log($(this).attr("data"));
             window.location.href='share.html?id='+$(this).attr("data");
         })
+      
 	</script>
 </body>
 </html>

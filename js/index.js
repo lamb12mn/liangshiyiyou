@@ -1,6 +1,5 @@
  //加载文章数据
  window.onload=function(){
-
     // console.log(1);
     // 加载文章页面内容区域内容
     function loadData(type, page) {
@@ -11,16 +10,16 @@
             let $json = articleData[type][page - 1]['list'][i];
             //   console.log($json['image']);
             let $str = `
-            <div class="content-line4">
-            <div class="line4-img">
-                <img src="${$json['teacher']}" alt="">
+            <div class="content-line4 birth">
+                <div class="line4-img">
+                    <img src="${$json['teacher']}" alt="">
+                </div>
+                <div class="line4-content">
+                    <p class="na">${$json['title']}<span>￥${$json['price']}</span></p>
+                    <p class="te"><span>${$json['describe1']}</span><span>${$json['describe2']}</span><span>${$json['describe3']}</span></p>
+                    <p class="classInfo"><span>${$json['detail1']}</span><span>${$json['detail2']}</span><span>${$json['detail2']}</span><span>${$json['detail4']}</span></p>
+                </div>
             </div>
-            <div class="line4-content">
-                <p>${$json['title']}<span>￥${$json['price']}</span></p>
-                <p><span>${$json['describe1']}</span><span>${$json['describe2']}</span><span>${$json['describe3']}</span></p>
-                <p class="classInfo"><span>${$json['detail1']}</span><span>${$json['detail2']}</span><span>${$json['detail2']}</span><span>${$json['detail4']}</span></p>
-            </div>
-        </div>
           `;
             $(".content").append($str);
     
@@ -29,6 +28,7 @@
     }
     // loadData('new', 1);
     // 更新加载数据
+ 
     update("new", 2);
     function update(type, a) {
         
@@ -69,6 +69,8 @@
             }
         })
     }
-    
+  
     //   监听滚动条加载数据结束
     }
+
+ 

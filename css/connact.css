@@ -36,7 +36,7 @@
 .main .content-first {
   margin: 0.2rem 0.2rem;
   padding: 0.3rem 0rem;
-  width: 95%;
+  width: cal(99.6%);
   height: 1.7rem;
   display: flex;
 }
@@ -72,7 +72,7 @@
 .main .content-second {
   margin: 0.3rem 0.2rem;
   padding: 0.3rem 0rem;
-  width: 95%;
+  width: cal(99.6%);
   height: 1rem;
   background: #EFF8FF;
 }
@@ -103,7 +103,7 @@
 }
 .main .content .content-line1 {
   margin: 0.2rem 0.2rem;
-  width: 95%;
+  width: cal(99.6%);
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -135,7 +135,7 @@
 }
 .main .content .c-l-title {
   margin: 0.2rem 0.2rem;
-  width: 95%;
+  width: cal(99.6%);
   display: flex;
   flex-direction: row;
 }
@@ -147,7 +147,7 @@
   font-size: 0.4rem;
 }
 .main .content .content-line2 {
-  width: 95%;
+  width: cal(99.6%);
   margin: 0.2rem 0.2rem;
   height: 1rem;
   background: #FEF9F5;
@@ -157,8 +157,8 @@
   font-weight: bold;
 }
 .main .content .content-line4 {
-  width: 95%;
-  height: 2rem;
+  width: cal(99.6%);
+  height: 2.9rem;
   margin: 0.2rem 0.2rem;
   display: flex;
 }

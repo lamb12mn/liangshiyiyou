@@ -76,7 +76,7 @@
 }
 .history {
   margin: 0.2rem 0.2rem;
-  width: 95%;
+  width: cal(99.6%);
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +118,7 @@
 }
 .main .content dl {
   margin: 0.2rem 0.4rem;
-  width: 95%;
+  width: cal(99.6%);
   display: flex;
 }
 .main .content dl dd {
@@ -137,7 +137,7 @@
 }
 .main .content .content-line1 {
   margin: 0.2rem 0.2rem;
-  width: 95%;
+  width: cal(99.6%);
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -169,7 +169,7 @@
 }
 .main .content .c-l-title {
   margin: 0.2rem 0.2rem;
-  width: 95%;
+  width: cal(99.6%);
   display: flex;
   flex-direction: row;
 }
@@ -181,7 +181,7 @@
   font-size: 0.4rem;
 }
 .main .content .content-line2 {
-  width: 95%;
+  width: cal(99.6%);
   margin: 0.2rem 0.2rem;
   height: 1rem;
   background: #FEF9F5;
@@ -208,7 +208,7 @@
   margin-right: 0.3rem;
 }
 .main .content .content-line3 {
-  width: 95%;
+  width: cal(99.6%);
   display: flex;
   margin-top: 0.7rem;
   margin: 0.5rem 0.2rem;
@@ -247,11 +247,11 @@
   margin: 0 0.5rem;
 }
 .main .content .content-line4 {
-  width: 95%;
+  width: cal(99.6%);
   display: flex;
   margin-top: 0.7rem;
   margin: 0.5rem 0.2rem;
-  height: 2.5rem;
+  height: 2.9rem;
   background: #FEF9F5;
   border-radius: 0.2rem;
 }
@@ -296,7 +296,7 @@
   margin-right: 0.2rem;
 }
 .main .content .loading {
-  width: 95%;
+  width: cal(99.6%);
   margin: 0.2rem 0.2rem;
   height: 1rem;
   line-height: 1rem;

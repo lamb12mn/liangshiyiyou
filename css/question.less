@@ -9,6 +9,7 @@
 
 .header {
     display: flex;
+    width: cal(100%-0.4rem);
     height: 1.1rem;
     margin: 0 0.2rem;
     justify-content: center;
@@ -54,6 +55,7 @@
                 color: #999;
                 border: 1px solid #d0d0d0;
                 height: 0.7rem;
+                font-size: 0.3rem;
                 //   margin-top: 0.3rem;
                 line-height: 0.7rem;
                 margin-right: 0.1rem;
@@ -95,7 +97,29 @@
     width: 100%;
     height: 100%;
     justify-content: center;
+    .history {
+        margin: 0.2rem 0.2rem;
+        width:  cal(100%-0.4rem);
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        align-items: auto;
+        align-content: start;
 
+        .item {
+            flex: 0 0 auto;
+            margin: 10px;
+            padding: 0.1rem 0.2rem;
+            border-radius: 0.3rem;
+            background: #FFF4F8;
+        }
+        .clear,i{
+            font-size: 0.35rem;
+            margin-left: 0.05rem;
+        }
+    }
     .slider {
         margin: 0.2rem 0.2rem;
         height: 3.5rem;
@@ -164,7 +188,7 @@
           }
         .content-line1 {
             margin: 0.2rem 0.2rem;
-            width: 95%;
+            width: cal(100%-0.4rem);
             display: flex;
             // background: #f1eaed;
             flex-direction: row;
@@ -224,7 +248,7 @@
         }
 
         .content-line5 {
-            width: 95%;
+            width: cal(100%-0.4rem);
             margin: 0.2rem 0.2rem;
             height: 1rem;
             background: #FEF9F5;
@@ -263,6 +287,7 @@
             height: 2.5rem;
             border: 0.05rem solid pink;
             background: #FEF9F5;
+            // background: #222;
             border-radius: 0.2rem;
             .c-l-left{
                 flex: 3;
@@ -303,12 +328,13 @@
         }
 
         .content-line4 {
-            width: 95%;
+            width: 100%;
             display: flex;
             margin-top: 0.7rem;
             margin: 0.5rem 0.2rem;
-            height: 2.5rem;
-            background: #FEF9F5;
+            height: 2.9rem;
+            background: #222;
+            // background: #FEF9F5;
             border-radius: 0.2rem;
 
             .line4-img {
@@ -399,11 +425,11 @@
                     height:100%;
 
                     .box{
-                        width: 95%;
+                        width: cal(100%-0.4rem);
                         display: flex;
                         margin-top: 0.7rem;
                         // margin: 0.5rem 0.2rem;
-                        height: 2.5rem;
+                        height: 2.9rem;
                         background: #FEF9F5;
                         border-radius: 0.2rem;
             
@@ -414,7 +440,7 @@
                             img {
                                 width: 2.5rem;
                                 height: 2.5rem;
-                                border-radius: 0.1rem;
+                                border-radius: 0.2rem;
                                 padding: 0.2rem 0.2rem;
                                 padding-left: 0;
                             }
