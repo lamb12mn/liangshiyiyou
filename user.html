@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2786165_dlqdgzp22c.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+    <!-- <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <title>Document</title>
+    <script src="./js/zepto.min.js"></script>
+    <!-- <script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/1.7.1/jquery.min.js"></script> -->
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <script src="./js/data.js"></script>
+</head>
+<body>
+    <div class="header">
+       <div class="aut btn upload"><input type="file" class="upload_pic" id="upload" placeholder="更换头像"/></div>
+       <div class="con">
+           <p class="name"><a href="register.html">立即登录</a></p>
+           <p class="welcome"><span>登录/注册后使用更多应用</span></p>
+       </div>
+       <div class="conright">
+           <span>邀请有礼</span>
+           
+       </div>
+    </div>
+    <div class="main">
+       <div class="content">
+            <div class="content-line1">
+                <div class="iconfont icon-shuxue"></div>
+                <div class="iconfont icon-shuben"></div>
+                <div class="iconfont icon-yuwen"></div>
+                <div class="iconfont icon-huaxue"></div>
+            </div>
+            <div class="c-l-title">
+                <div>我的订单</div>
+                <div>我的钱包</div>
+                <div>商城</div>
+                <div>奖学券</div>
+            </div>
+       </div>
+       <div class="teaching">
+           <p>教学</p>
+           <div class="content-line1">
+            <div class="iconfont icon-yaoqingqia"></div>
+            <div class="iconfont icon-huiyuan-"></div>
+            <div class="iconfont icon-zhuanjiaxianshangdayi"></div>
+            <div class="iconfont icon-laoshi"></div>
+        </div>
+        <div class="c-l-title">
+            <div>我的订单</div>
+            <div>我的钱包</div>
+            <div>商城</div>
+            <div>奖学券</div>
+        </div>
+        <div class="content-line1">
+            <div class="iconfont icon-yaoqingqia"></div>
+            <div class="iconfont icon-huiyuan-"></div>
+            <div class="iconfont icon-zhuanjiaxianshangdayi"></div>
+            <div class="iconfont icon-laoshi"></div>
+        </div>
+        <div class="c-l-title">
+            <div>我的订单</div>
+            <div>我的钱包</div>
+            <div>商城</div>
+            <div>奖学券</div>
+        </div>
+       </div>
+       <div class="service">
+        <p>服务</p>
+        <div class="content-line1">
+         <div class="iconfont icon-yaoqingqia"></div>
+         <div class="iconfont icon-huiyuan-"></div>
+         <div class="iconfont icon-zhuanjiaxianshangdayi"></div>
+         <div class="iconfont icon-laoshi"></div>
+     </div>
+     <div class="c-l-title">
+         <div>我的订单</div>
+         <div>我的钱包</div>
+         <div>商城</div>
+         <div>奖学券</div>
+     </div>
+     <div class="content-line1">
+         <div class="iconfont icon-yaoqingqia"></div>
+         <div class="iconfont icon-huiyuan-"></div>
+         <div class="iconfont icon-zhuanjiaxianshangdayi"></div>
+         <div class="iconfont icon-laoshi"></div>
+     </div>
+     <div class="c-l-title">
+         <div>我的订单</div>
+         <div>我的钱包</div>
+         <div>商城</div>
+         <div>奖学券</div>
+     </div>
+       </div>
+       <br>
+       <br>
+       <br>
+    </div>
+ 
+    <div class="footer">
+        <a href="index.html"><div><i class="iconfont icon-shouye"></i><span>首页</span></div></a>
+        <a href="question.html"><div><i class="iconfont icon-ketangdayi"></i><span>答疑</span></div></a>
+        <a href="share.html"><div><i class="iconfont icon-icon_xinyong_xianxing_jijin-240"></i><span>邀请卡</span></div></a>
+        <a href="study.html"><div><i class="iconfont icon-course"></i><span>学习</span></div></a>
+        <a href="user.html"><div><i class="iconfont icon-wode"></i><span>我的</span></div></a>
+    </div>
+ 
+    <script src="./js/cookie.js"></script>
+    <script>
+        $(".aut").click(function () {  
+            clearCookie("aut");
+        })
+        let img=getCookie('img');
+        let name=getCookie('name');
+        // var str=`<img src="./images/avatar.jpg" alt="">`;
+        
+        if(typeof getCookie("img")=="string"){
+            var str=`<img src="${img}" alt="">`;
+            $(".aut").append(str);
+            $(".name").text(name);
+            $(".welcome span").html('退出登录(点击头像上传头像)');
+            $(".welcome span").on("click",function(){
+                console.log(1); 
+                clearCookie('img');
+                clearCookie('name');
+                clearCookie('pass');
+                window.location.href='./user.html';
+            });
+                 
+            
+
+        }
+        if(typeof getCookie("img")=="object"){
+            var str=`<img src="./images/avatar.jpg" alt="">`;
+            $(".aut").append(str);
+        }
+
+        //上传图片
+        var input1 = document.getElementById("upload");
+        let arr={
+            "aut":''
+        }
+        if (typeof FileReader === 'undefined') {
+            input1.setAttribute('disabled', 'disabled');
+        } else {
+            input1.addEventListener('change', function () {
+                var file = this.files[0];
+                if (!/image\/\w+/.test(file.type)) {
+                    alert("文件必须为图片！");
+                    return false;
+                }
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function (e) {
+                    
+                    var image = new Image();
+                    image.src = e.target.result;
+                    // console.log($(image).attr("src"));
+                    arr["aut"]=$(image).attr("src");
+                    $(".aut img").attr("src", arr["aut"]);
+                }
+            }, false);
+        }
+        
+    </script>
+</body>
+</html>

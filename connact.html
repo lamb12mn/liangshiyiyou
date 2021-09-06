@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2786165_3tm0urw3ky6.css">
+    <link rel="stylesheet" href="./css/connact.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <title>Document</title>
+    <script src="./js/zepto.min.js"></script>
+    <!-- <script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/1.7.1/jquery.min.js"></script> -->
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <script src="./js/data.js"></script>
+    <link crossorigin="anonymous" integrity="sha384-YaZyl3Hx9kaOWq199ZKwz6o6/3u1KbkQ28YsdOQb/aU4oVBjLgW1WifH1WeSYwbW"
+        href="https://lib.baomitu.com/Swiper/2.7.6/idangerous.swiper.min.css" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha384-jvxZtB6PRIuRe1TKuwNcAwwN/9+P2UC8XaofZ86an5ZNMk8tOXlGH4MERr8yG7iN"
+        src="https://lib.baomitu.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a class="left iconfont icon-zuojiantou location" href="question.html"></a>
+        <div class="right"></div>
+        <a class="left iconfont icon-fenxiang location" href="#"></a>
+    </div>
+    <div class="main">
+        <div class="content-first">
+           
+        </div>
+        <div class="content-second">
+          <p>一对一在线答疑</p>
+          <p><span>名师辅导答疑 难题不再是问题</span><span>了解更多<i class="iconfont icon-youjiantou"></i></span></p>
+        </div>
+        <div class="content">
+            <div class="content-line4">
+                <div>
+                    <span class="tou iconfont icon-tongji"></span>
+                    <div class="c-t-content">
+                        <p>作业讲解</p>
+                        <p>错难题精讲</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="tou iconfont icon-shuben"></span>
+                    <div class="c-t-content">
+                        <p>举一反三</p>
+                        <p>知识点巩固</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="tou iconfont icon-fuwuhao"></span>
+                    <div class="c-t-content">
+                        <p>考点拓展</p>
+                        <p>培养应试力</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-line2">
+               请联系我吧！！！
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="footer">
+        <a href="index.html">
+            <div><i class="iconfont icon-shouye"></i><span>首页</span></div>
+        </a>
+        <a href="question.html">
+            <div><i class="iconfont icon-ketangdayi"></i><span>答疑</span></div>
+        </a>
+        <a href="share.html">
+            <div><i class="iconfont icon-icon_xinyong_xianxing_jijin-240"></i><span>邀请卡</span></div>
+        </a>
+        <a href="study.html">
+            <div><i class="iconfont icon-course"></i><span>学习</span></div>
+        </a>
+        <a href="user.html">
+            <div><i class="iconfont icon-wode"></i><span>我的</span></div>
+        </a>
+    </div>
+    <script crossorigin="anonymous"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/zySearch.js"></script>
+    <script src="./js/connact.js"></script>
+    <script>
+    // 解析参数
+     function getQueryString(name) { 
+	  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+	  var r = window.location.search.substr(1).match(reg); 
+	  if (r != null) return decodeURI(r[2]); return null; 
+    }
+    let info=getQueryString('info');
+    let infoS=JSON.parse(info);
+    console.log(infoS["image"]);
+    if(getQueryString('info')==null){
+       let str=` 
+       <div class="aut"><img src="./images/3.jpg" alt=""></div>
+            <div class="c-f-content">
+                <p>张老师</p>
+                <p>一年级数学</p>
+                <p><span>教龄10年</span><span>已授1013课</span></p>
+            </div>
+            
+       `;
+       $(".content-first").append(str);
+    }else{
+        let str=` 
+       <div class="aut"><img src="${infoS["image"]}" alt=""></div>
+            <div class="c-f-content">
+                <p>${infoS["name"]}</p>
+                <p>${infoS["tag"]}</p>
+                <p><span>${infoS["date"]}</span><span>${infoS["hours"]}</span></p>
+            </div>
+       `;
+       $(".content-first").append(str);
+    }
+    </script>
+</body>
+
+</html>

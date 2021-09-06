@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.show {
+  display: block;
+}
+.header {
+  display: flex;
+  height: 1.1rem;
+  margin: 0 0.2rem;
+  justify-content: center;
+}
+.header .left {
+  width: 1rem;
+  display: block;
+  text-align: center;
+  height: 1.1rem;
+  font-weight: bold;
+  margin: 0.3rem 0rem;
+  line-height: 0.7rem;
+  margin-right: 0.1rem;
+  font-size: 0.45rem;
+  color: #222;
+}
+.header .right {
+  flex: 1;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -3rem;
+  bottom: 1.3rem;
+  justify-content: center;
+}
+.main .content-first {
+  margin: 0.2rem 0.2rem;
+  padding: 0.3rem 0rem;
+  width: 95%;
+  height: 1.7rem;
+  display: flex;
+}
+.main .content-first .aut {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-left: 0.4rem;
+}
+.main .content-first .aut img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+}
+.main .content-first .c-f-content {
+  flex: 1;
+  margin-left: 0.3rem;
+}
+.main .content-first .c-f-content p:first-child {
+  font-size: 0.45rem;
+  font-weight: bold;
+}
+.main .content-first .c-f-content p:nth-child(2) {
+  padding-top: 0.15rem;
+  color: #666;
+}
+.main .content-first .c-f-content p:last-child {
+  padding-top: 0.15rem;
+  color: #666;
+}
+.main .content-first .c-f-content p:last-child span {
+  margin-right: 0.2rem;
+}
+.main .content-second {
+  margin: 0.3rem 0.2rem;
+  padding: 0.3rem 0rem;
+  width: 95%;
+  height: 1rem;
+  background: #EFF8FF;
+}
+.main .content-second p {
+  margin-left: 0.4rem;
+}
+.main .content-second p:first-child {
+  font-size: 0.45rem;
+  font-weight: bold;
+}
+.main .content-second p:last-child {
+  color: #666;
+  padding-top: 0.15rem;
+}
+.main .content-second p:last-child span:first-child {
+  float: left;
+}
+.main .content-second p:last-child span:last-child {
+  float: right;
+}
+.main .content-second p:last-child span:last-child i {
+  font-size: 0.3rem;
+  margin-right: 0.2rem;
+}
+.main .content {
+  width: 100%;
+  height: 100%;
+}
+.main .content .content-line1 {
+  margin: 0.2rem 0.2rem;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.main .content .content-line1 div {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.2rem 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  border-radius: 50%;
+}
+.main .content .content-line1 div:first-child {
+  color: #379FFE;
+}
+.main .content .content-line1 div:nth-child(2) {
+  color: #FC557B;
+}
+.main .content .content-line1 div:nth-child(3) {
+  color: #FCB825;
+}
+.main .content .content-line1 div:nth-child(4) {
+  color: #23BF5E;
+}
+.main .content .content-line1 div:nth-child(5) {
+  color: #D08BFF;
+}
+.main .content .c-l-title {
+  margin: 0.2rem 0.2rem;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+.main .content .c-l-title div {
+  flex: 1;
+  margin: 0rem 0.2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.4rem;
+}
+.main .content .content-line2 {
+  width: 95%;
+  margin: 0.2rem 0.2rem;
+  height: 1rem;
+  background: #FEF9F5;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: bold;
+}
+.main .content .content-line4 {
+  width: 95%;
+  height: 2rem;
+  margin: 0.2rem 0.2rem;
+  display: flex;
+}
+.main .content .content-line4 div {
+  flex: 1;
+}
+.main .content .content-line4 div .tou {
+  height: 2rem;
+  width: 0.65rem;
+  margin: 0 0.1rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: auto 0;
+  font-size: 0.5rem;
+  float: left;
+}
+.main .content .content-line4 div .tou:first-child {
+  color: #9bddac;
+}
+.main .content .content-line4 div .tou:nth-child(2) {
+  color: #65ABF8;
+}
+.main .content .content-line4 div .tou:first-child {
+  color: #FA880F;
+}
+.main .content .content-line4 div .c-t-content {
+  margin-top: auto 0;
+  float: left;
+  height: 1.5rem;
+  background: #fff;
+}
+.main .content .content-line4 div .c-t-content p:first-child {
+  margin-top: 0.3rem;
+  width: 100%;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.main .content .content-line4 div .c-t-content p:last-child {
+  width: 100%;
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+  font-weight: normal;
+  color: #666;
+}
+.main .content .content-line4 div:first-child {
+  flex: 1;
+}
+.main .content .content-line4 div:last-child {
+  flex: 1;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 1.3rem;
+  display: flex;
+  border-top: 0.02rem solid #ccc;
+}
+.footer a {
+  color: #222;
+  display: block;
+  width: 20%;
+  font-size: 0.5rem;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.footer a div {
+  flex: 1;
+  font-size: 0.4rem;
+}
+.footer a div i {
+  font-size: 0.5rem;
+  margin-right: 0.1rem;
+}
+.footer a div span {
+  display: block;
+  font-size: 0.4rem;
+}

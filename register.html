@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+   <!-- 登录表单 -->
+   <div id="login">
+    <div class="login-center">
+      <div class="login-title">
+        <ul class="alist clearfix">
+          <li class="active">注册</li>
+          <li >登录</li>
+        </ul>
+      </div>
+      <div class="form">
+        <div class="l-r-form">
+        <form id="r-form">
+          <input type="text" placeholder="用户名" id="r-username" value=""> 
+          <span class="user-notice"></span>
+          <input type="password" placeholder="密码" id="r-password" value="">
+          <span class="pass-notice"></span>
+          <input type="text" placeholder="手机号" id="phone" value="">
+          <span class="phone-notice"></span>
+          <div id="code">
+            <input type="text" placeholder="验证码" id="r-code" value="">
+            <button id="getCode">发送验证码到手机</button>
+            <span class="code-info"></span>
+            <span class="code-notice"></span>
+          </div>
+         
+          <div>
+            <button id="register-btn" >注册</button>
+            <span><a href="#">已有账号，去登录</a></span>
+          </div>
+        </form>
+        </div>
+        <div class="l-r-form">
+          <form id="l-form" >
+            <input type="text" placeholder="用户名" id="l-username" value="">
+            <span class="l-u-notice"></span>
+            <input type="password" placeholder="密码" id="l-password" value="">
+            <span class="l-u-pass"></span>
+            <div>
+            <button id="login-btn">登录</button>
+            <span><a href="#">忘记密码</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script crossorigin="anonymous" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/cookie.js"></script>
+<script src="./js/register.js"></script>
+<script>
+
+</script>
+</html>

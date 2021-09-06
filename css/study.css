@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.show {
+  display: block;
+}
+.header {
+  width: 95%;
+  margin: 0.2rem 0.2rem;
+}
+.header p {
+  margin: 0.2rem 0.2rem;
+  flex: 1;
+}
+.header p .title {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.header p .title-c {
+  color: #666;
+  font-size: 0.7rem;
+}
+.header p i {
+  float: right;
+  margin-top: -0.6rem;
+  line-height: 1rem;
+  font-size: 1rem ;
+  margin: 0rem 0.2rem;
+}
+.main {
+  width: 100%;
+  height: 1rem;
+  margin-bottom: -3rem;
+  bottom: 1.3rem;
+  justify-content: center;
+}
+.main .content {
+  width: 100%;
+  height: 1rem;
+}
+.main .content p {
+  margin: 0.2rem 0.2rem;
+  display: block;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.main .content .content-line1 {
+  margin: 0.2rem 0.2rem;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+.main .content .content-line1 p {
+  font-size: 0.7rem;
+}
+.main .content .content-line1 div {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.2rem 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+}
+.main .content .content-line1 div:first-child {
+  color: #379FFE;
+  background: #EFF8FF;
+}
+.main .content .content-line1 div:nth-child(2) {
+  color: #FC557B;
+  background: #FFF4F8;
+}
+.main .content .content-line1 div:nth-child(3) {
+  color: #FCB825;
+  background: #FFF8E8;
+}
+.main .content .content-line1 div:nth-child(4) {
+  color: #23BF5E;
+  background: #EFFBF5;
+}
+.main .content .content-line1 div:nth-child(5) {
+  color: #D08BFF;
+  background: #FCF7FE;
+}
+.main .content .c-l-title {
+  margin: 0.2rem 0.2rem;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+.main .content .c-l-title div {
+  flex: 1;
+  margin: 0rem 0.2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.4rem;
+}
+.main .content .content-line2 {
+  width: 95%;
+  display: flex;
+  margin-top: 0.7rem;
+  margin: 0.5rem 0.2rem;
+  height: 2.5rem;
+  background: #fceff1;
+  border-radius: 0.2rem;
+}
+.main .content .content-line2 .line2-img {
+  flex: 2;
+}
+.main .content .content-line2 .line2-img img {
+  width: 2.2rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  border-radius: 0.1rem;
+}
+.main .content .content-line2 .line2-content {
+  flex: 3;
+}
+.main .content .content-line2 .line2-content p {
+  color: #fff;
+}
+.main .content .content-line2 .line2-content p:first-child {
+  font-size: 0.5rem;
+  color: orangered;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main .content .content-line2 .line2-content p:nth-child(2) {
+  font-size: 0.26rem;
+  font-weight: bold;
+  color: peru;
+}
+.main .content .content-line2 .line2-content span {
+  color: #89C0FF;
+  font-weight: normal;
+  background: peru;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.3rem;
+  margin: 0 0.5rem;
+}
+.main .content .content-line3 {
+  width: 95%;
+  margin: 0.1rem 0.2rem;
+  height: 2rem;
+  border: 0.01rem solid #ccc;
+  background: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+}
+.main .content .content-line3 .c-l-l {
+  flex: 3;
+}
+.main .content .content-line3 .c-l-l p:first-child {
+  font-size: 0.5rem;
+}
+.main .content .content-line3 .c-l-l p:first-child i {
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+.main .content .content-line3 .c-l-l p:last-child {
+  color: #999;
+}
+.main .content .content-line3 .c-l-r {
+  flex: 1;
+}
+.main .content .content-line3 .c-l-r div {
+  vertical-align: middle;
+  text-align: center;
+  margin: 0.57rem 0;
+  width: 1.6rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #9bddac;
+}
+.main .content .content-line4 {
+  width: 95%;
+  height: 2rem;
+  margin: 0.2rem 0.2rem;
+  display: flex;
+}
+.main .content .content-line4 div {
+  flex: 1;
+}
+.main .content .content-line4 div .tou {
+  height: 2rem;
+  width: 1.5rem;
+  margin: 0 0.1rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  float: left;
+  color: #9bddac;
+}
+.main .content .content-line4 div .c-t-content {
+  float: left;
+  height: 2rem;
+  background: #fff;
+}
+.main .content .content-line4 div .c-t-content p:first-child {
+  margin-top: 0.3rem;
+  width: 100%;
+  font-size: 0.4rem;
+}
+.main .content .content-line4 div .c-t-content p:last-child {
+  width: 100%;
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+  font-weight: normal;
+  color: #666;
+}
+.main .content .content-line4 div:first-child {
+  flex: 1;
+}
+.main .content .content-line4 div:last-child {
+  flex: 1;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 1.3rem;
+  display: flex;
+  border-top: 0.02rem solid #ccc;
+}
+.footer a {
+  color: #222;
+  display: block;
+  width: 20%;
+  font-size: 0.5rem;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.footer a div {
+  flex: 1;
+  font-size: 0.4rem;
+}
+.footer a div i {
+  font-size: 0.5rem;
+  margin-right: 0.1rem;
+}
+.footer a div span {
+  display: block;
+  font-size: 0.4rem;
+}
