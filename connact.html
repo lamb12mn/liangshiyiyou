@@ -8,29 +8,38 @@
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_2786165_3tm0urw3ky6.css">
     <link rel="stylesheet" href="./css/connact.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/action-sheet.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <script src="./js/resize.js"></script>
+
     <!-- <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
     <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
-    <title>Document</title>
+    <title>老师详细页面</title>
     <script src="./js/zepto.min.js"></script>
     <script src="./js/flexible.js"></script>
     <!-- <script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/1.7.1/jquery.min.js"></script> -->
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
     <!-- <script src="./js/bootstrap.js"></script> -->
     <script src="./js/data.js"></script>
+    <link crossorigin="anonymous" integrity="sha384-p1+tzRdXcglS+PrR+shfL55KoHugzlLLtjkBKwCZaAqOruyk5rBEQYtiTaK9XewD" href="https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+
     <link crossorigin="anonymous" integrity="sha384-YaZyl3Hx9kaOWq199ZKwz6o6/3u1KbkQ28YsdOQb/aU4oVBjLgW1WifH1WeSYwbW"
         href="https://lib.baomitu.com/Swiper/2.7.6/idangerous.swiper.min.css" rel="stylesheet">
     <script crossorigin="anonymous" integrity="sha384-jvxZtB6PRIuRe1TKuwNcAwwN/9+P2UC8XaofZ86an5ZNMk8tOXlGH4MERr8yG7iN"
         src="https://lib.baomitu.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
+        <script crossorigin="anonymous"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="header">
         <a class="left iconfont icon-zuojiantou location" href="question.html"></a>
         <div class="right"></div>
-        <a class="left iconfont icon-fenxiang location" href="#"></a>
+        <a class="left iconfont icon-fenxiang location share" href="#"></a>
     </div>
     <div class="main">
         <div class="content-first">
@@ -73,8 +82,42 @@
         <br>
         <br>
         <br>
+        
     </div>
-
+    <div class="action-sheet">
+        <div class="menu-title">
+            <div class="menu-name">
+                分享到
+            </div>
+            <div class="close-icon">
+                <i class="iconfont icon-cha" aria-hidden="true"></i>
+            </div>
+        </div>
+        <ul>
+            <li class="row">
+                <div id="share-1" class="share-component social-share"><a class="social-share-icon icon-weibo"
+                        href="http://service.weibo.com/share/share.php?url=https://lamb12mn.github.io/liangshiyiyou/&amp;title=老铁%20请转发！&amp;pic=&amp;appkey="
+                        target="_blank"></a><a class="social-share-icon icon-qq"
+                        href="http://connect.qq.com/widget/shareqq/index.html?url=https://lamb12mn.github.io/liangshiyiyou/&amp;title=老铁%20请转发！&amp;source=content%20site&amp;desc=&amp;pics="
+                        target="_blank"></a><a class="social-share-icon icon-douban"
+                        href="http://shuo.douban.com/!service/share?href=https://lamb12mn.github.io/liangshiyiyou/&amp;name=content%20title&amp;text=&amp;image=&amp;starid=0&amp;aid=0&amp;style=11"
+                        target="_blank"></a><a class="social-share-icon icon-qzone"
+                        href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lamb12mn.github.io/liangshiyiyou/&amp;title=老铁%20请转发！&amp;desc=&amp;summary=&amp;site=content%20site"
+                        target="_blank"></a><a class="social-share-icon icon-linkedin"
+                        href="http://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;title=老铁%20请转发！&amp;url=https://lamb12mn.github.io/liangshiyiyou/&amp;summary=&amp;source=content%20site&amp;armin=armin"
+                        target="_blank"></a><a class="social-share-icon icon-diandian"
+                        href="http://www.diandian.com/share?lo=https://lamb12mn.github.io/liangshiyiyou/&amp;ti=content%20title&amp;type=link"
+                        target="_blank"></a><a class="social-share-icon icon-facebook"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://lamb12mn.github.io/liangshiyiyou/&amp;title=老铁%20请转发！&amp;description=&amp;caption={{SUBHEAD}}&amp;link=https://lamb12mn.github.io/liangshiyiyou/&amp;picture="
+                        target="_blank"></a><a class="social-share-icon icon-twitter"
+                        href="https://twitter.com/intent/tweet?text=content%20title&amp;url=https://lamb12mn.github.io/liangshiyiyou/&amp;via=https%3A%2F%2Fwww.jq22.com"
+                        target="_blank"></a><a class="social-share-icon icon-google"
+                        href="https://plus.google.com/share?url=https://lamb12mn.github.io/liangshiyiyou/"
+                        target="_blank"></a></div>
+            </li>
+        </ul>
+    </div>
+<div class="mask"></div>
     <!-- <div class="footer">
         <a href="index.html">
             <div><i class="iconfont icon-shouye"></i><span>首页</span></div>
@@ -92,14 +135,24 @@
             <div><i class="iconfont icon-wode"></i><span>我的</span></div>
         </a>
     </div> -->
-    <script crossorigin="anonymous"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+ 
     <script type="text/javascript" src="./js/zySearch.js"></script>
     <script src="./js/connact.js"></script>
     <script src="./js/footer.js"></script>
     <script>
-   
+    //点击菜单
+    $('.share').click(function () {
+            $(this).addClass('menu-active')
+            $('.action-sheet').show()
+            $('.mask').show()
+            $('html').addClass('scroll-mask')
+        })
+         //关闭弹窗
+         $('.close-icon').click(function () {
+            $('.action-sheet').hide()
+            $('.mask').hide()
+            $('html').removeClass('scroll-mask')
+        })
     </script>
 </body>
 

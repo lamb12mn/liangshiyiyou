@@ -26,7 +26,7 @@
     background: #fff;
     width: 100%;
     position: fixed;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
     bottom: 0;
     z-index: 11111;
 }
@@ -54,7 +54,7 @@
 .action-sheet ul li .social-share-icon{
     width: 1rem;
     height: 1rem;
-    margin:0.1rem 0.4rem;
+    margin:0.1rem 0.3rem;
     float: left;
     line-height: 1rem;
     font-size: 0.45rem;
