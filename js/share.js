@@ -46,8 +46,8 @@ function loadData(type, page) {
         <img src="${$json['teacher']}" alt="">
     </div>
     <div class="line4-content">
-        <p>${$json['title']}<span>￥${$json['price']}</span></p>
-        <p><span>${$json['describe1']}</span><span>${$json['describe2']}</span><span>${$json['describe3']}</span></p>
+        <p class="na">${$json['title']}<span>￥${$json['price']}</span></p>
+        <p class="te"><span>${$json['describe1']}</span><span>${$json['describe2']}</span><span>${$json['describe3']}</span></p>
         <p class="classInfo"><span>${$json['detail1']}</span><span>${$json['detail2']}</span><span>${$json['detail2']}</span><span>${$json['detail4']}</span></p>
     </div>
 </div>
@@ -101,3 +101,10 @@ function update(type, a) {
         }
     })
 }
+//点击跳转
+$(".content").on("click",".content-line4",function () {  
+    $(this).find(".line4-content .na span").empty();
+    var info=`{"image":"${$(this).find(".line4-img img").attr("src")}","name":"${$(this).find(".line4-content .na").text()}","tag":"${$(this).find(".te span:first").text()}","date":"${$(this).find(".te span:nth-child(2)").text()}","hours":"${$(this).find(".te span:nth-child(3)").text()}"}`;
+    window.location.href='connact.html?info='+info;
+    // console.log($(this).find(".line4-content .na").text());
+})

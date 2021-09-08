@@ -79,14 +79,13 @@
         })
     }  
     //   监听滚动条加载数据结束
-    $(".connact").click(function () {  
+    $(".tab").on("click",".connact",function () {  
+       
         let parent=$(this).parent().parent().parent();
-        // console.log($(this).parent().parent().parent().find(".line4-img img").attr("src"));
-        // var im=parent.find(".line4-img img").attr("src");
-        // var name=parent.find(".line4-content .na").text();
-        // var name=parent.find(".line4-content .na").text();
+        // console.log(parent);
+        parent.find(".line4-content .na span").empty();
         var info=`{"image":"${parent.find(".line4-img img").attr("src")}","name":"${parent.find(".line4-content .na").text()}","tag":"${parent.find(".te span:first").text()}","date":"${parent.find(".te span:nth-child(2)").text()}","hours":"${parent.find(".te span:nth-child(3)").text()}"}`;
-        // console.log(parent.find(".te span:nth-child(3)").text());
+
         window.location.href='connact.html?info='+info;
     })
        

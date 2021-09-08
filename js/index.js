@@ -73,4 +73,11 @@
     //   监听滚动条加载数据结束
     }
 
+$(".content").on("click",".content-line4",function () {  
+    $(this).find(".line4-content .na span").empty();
+    var info=`{"image":"${$(this).find(".line4-img img").attr("src")}","name":"${$(this).find(".line4-content .na").text()}","tag":"${$(this).find(".te span:first").text()}","date":"${$(this).find(".te span:nth-child(2)").text()}","hours":"${$(this).find(".te span:nth-child(3)").text()}"}`;
+    window.location.href='connact.html?info='+info;
+    // console.log($(this).find(".line4-content .na").text());
+})
+
  
