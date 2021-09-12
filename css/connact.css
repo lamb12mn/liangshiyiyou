@@ -33,40 +33,40 @@
   bottom: 1.3rem;
   justify-content: center;
 }
-.main .content-first {
+.main .content-first1 {
   margin: 0.2rem 0.2rem;
   padding: 0.3rem 0rem;
   width: cal(99.6%);
   height: 1.7rem;
   display: flex;
 }
-.main .content-first .aut {
+.main .content-first1 .aut {
   width: 1.7rem;
   height: 1.7rem;
   margin-left: 0.4rem;
 }
-.main .content-first .aut img {
+.main .content-first1 .aut img {
   width: 100%;
   height: 100%;
   border-radius: 0.2rem;
 }
-.main .content-first .c-f-content {
+.main .content-first1 .c-f-content {
   flex: 1;
   margin-left: 0.3rem;
 }
-.main .content-first .c-f-content p:first-child {
+.main .content-first1 .c-f-content p:first-child {
   font-size: 0.45rem;
   font-weight: bold;
 }
-.main .content-first .c-f-content p:nth-child(2) {
+.main .content-first1 .c-f-content p:nth-child(2) {
   padding-top: 0.15rem;
   color: #666;
 }
-.main .content-first .c-f-content p:last-child {
+.main .content-first1 .c-f-content p:last-child {
   padding-top: 0.15rem;
   color: #666;
 }
-.main .content-first .c-f-content p:last-child span {
+.main .content-first1 .c-f-content p:last-child span {
   margin-right: 0.2rem;
 }
 .main .content-second {
@@ -75,6 +75,7 @@
   width: cal(99.6%);
   height: 1rem;
   background: #EFF8FF;
+  padding-bottom: 0.5rem;
 }
 .main .content-second p {
   margin-left: 0.4rem;
@@ -156,9 +157,352 @@
   line-height: 1rem;
   font-weight: bold;
 }
+.main .content .changeTab {
+  width: cal(99.6%);
+  margin: 0 0.2rem;
+  height: 100%;
+  margin-top: 0.5rem;
+}
+.main .content .changeTab #nav {
+  width: cal(99.6%);
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.4rem;
+  color: #666;
+}
+.main .content .changeTab #nav ul {
+  display: flex;
+}
+.main .content .changeTab #nav ul .act {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 0.02rem solid #979b99;
+}
+.main .content .changeTab #nav ul li {
+  float: left;
+  flex: 1;
+  text-align: center;
+}
+.main .content .changeTab #tabContent {
+  width: cal(99.6%);
+  height: 100%;
+  margin: 0 0.2rem;
+}
+.main .content .changeTab #tabContent .action {
+  display: block;
+}
+.main .content .changeTab #tabContent .tab {
+  height: 100%;
+}
+.main .content .changeTab #tabContent .tab p {
+  margin-top: 0.5rem;
+}
+.main .content .changeTab #tabContent .tab h1 {
+  font-weight: bold;
+  font-size: 0.45rem;
+  margin: 0.4rem 0rem;
+}
+.main .content .changeTab #tabContent .tab .tabLine1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+}
+.main .content .changeTab #tabContent .tab .tabLine1 .item {
+  flex: 0 0 auto;
+  margin: 0.2rem;
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.35rem;
+  color: #666;
+  background: #e7e5e5;
+}
+.main .content .changeTab #tabContent .tab .tabLine1 p {
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+.main .content .changeTab #tabContent .tab .tabLine2 {
+  margin: 1rem 0rem;
+  width: cal(99.6%);
+  height: 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background: #23BF5E;
+}
+.main .content .changeTab #tabContent .tab .tabLine2 span {
+  color: #fff;
+  font-size: 0.45rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+.main .content .changeTab #tabContent .tab .tab2Line1 {
+  margin-top: 0.5rem;
+}
+.main .content .changeTab #tabContent .tab .tab2Line1 span {
+  padding: 0.4rem 0;
+}
+.main .content .changeTab #tabContent .tab .tab2Line1 span:first-child {
+  font-size: 0.45rem;
+  font-weight: bold;
+}
+.main .content .changeTab #tabContent .tab .tab2Line1 span:nth-child(2) {
+  font-size: 0.45rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 {
+  width: 100%;
+  height: 100%;
+  margin: 0.2rem 0;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 {
+  width: 100%;
+  height: 100%;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-top {
+  width: calc(100% - 0.04rem);
+  border: 0.02rem solid #9FCAB1;
+  border-radius: 0.1rem;
+  height: 1.5rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-top .area-textarea {
+  width: 100%;
+  height: 1.5rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-top .area-textarea .textarea-content {
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 0.05rem;
+  background: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 0;
+  color: #bfbfbf;
+  resize: none;
+  font-size: 0.25rem;
+  line-height: normal;
+  text-align: left;
+  display: inline;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-bottom {
+  width: 100%;
+  height: 0.9rem;
+  display: flex;
+  margin-top: 0.2rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-bottom span {
+  width: 0.7rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin: 0 0.1rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-bottom .comment {
+  flex: 1;
+  display: inline-block;
+  height: 0.7rem;
+  color: #fff;
+  line-height: 0.7rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line2 .left-line2-bottom .comment span {
+  width: 1.5rem;
+  background: #9FCAB1;
+  padding: 0rem 0.2rem;
+  border-radius: 0.3rem;
+  float: right;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line3 {
+  width: 100%;
+  height: 100%;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line3 .left-line3-title {
+  width: 1.5rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  font-size: 0.45rem;
+  border: 0.01rem solid #9FCAB1;
+  border-bottom: none;
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line3 .left-line3-title::after {
+  content: "";
+  display: block;
+  width: calc(100% - 2rem);
+  height: 0.01rem;
+  background: #9FCAB1;
+  position: absolute;
+  margin-left: 1.5rem;
+  transition: all 0.5s ease;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line3 .left-line3-comment {
+  float: right;
+  margin-top: -0.6rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line3 .left-line3-comment .comment-number {
+  font-size: 0.25rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line3 .left-line3-comment .comment-number .cn-number {
+  color: #9FCAB1;
+  font-size: 0.45rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line4 {
+  font-size: 0.36rem;
+  height: 0.7rem;
+  border-left: 0.1rem solid olivedrab;
+  margin-top: 0.5rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line4 span {
+  padding-left: 0.2rem;
+  line-height: 0.7rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 {
+  margin-top: 0.2rem;
+  height: 100%;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.2rem;
+  border-bottom: 0.01rem solid #9FCAB1;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-left {
+  float: left;
+  width: 1rem;
+  height: 1.2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.4rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-left .hotComent-left-img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.2rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right {
+  height: 100%;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right p {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  color: #222;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right p:first-child span:first-child {
+  margin: 0 0;
+  float: left;
+  color: #82a18f;
+  font-size: 0.3rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right p:first-child span:nth-child(2) {
+  float: left;
+  margin-left: 0.1rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right p:first-child span:last-child {
+  float: right;
+  color: #222;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right p:nth-child(3) span {
+  float: right;
+  line-height: 0.5rem;
+  height: 0.5rem;
+  font-size: 0.3rem;
+  color: #222;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right p:nth-child(3) span:hover {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right .repContent {
+  height: 0.5rem;
+  display: inline-block;
+  line-height: 0.5rem;
+  display: flex;
+  display: none;
+  margin: 0.2rem 0.2rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right .repContent img {
+  float: left;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  margin: 0rem 0.2rem;
+  border-radius: 50%;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right .repContent span:nth-child(2) {
+  float: left;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right .repContent .ct {
+  float: left;
+  display: block;
+  color: #333;
+  flex: 1;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-right .repContent .del {
+  width: 1.5rem;
+  text-align: center;
+  display: block;
+  border-radius: 0.1rem;
+  float: right;
+  color: #C5DEC5;
+  cursor: pointer;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom {
+  height: 100%;
+  display: none;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom img {
+  float: left;
+  width: 0.7rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom span {
+  display: block;
+  line-height: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom .area-textarea {
+  width: 100%;
+  margin-left: 0.2rem;
+  height: 0.7rem;
+  border: 0.01rem solid #9FCAB1;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom .area-textarea .textarea-content {
+  width: calc(100% - 0.2rem);
+  border-radius: 0.1rem;
+  background: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 0;
+  color: #bfbfbf;
+  resize: none;
+  font-size: 0.25rem;
+  line-height: normal;
+  text-align: left;
+  display: inline;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom p {
+  height: 0.7rem;
+  margin: 0.1rem 0.2rem;
+}
+.main .content .changeTab #tabContent .tab .tab4Line1 .left-line5 .hotComent .hotComent-bottom p .rep {
+  float: right;
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background: #9FCAB1;
+  text-align: center;
+  margin: 0rem 0.1rem;
+  border-radius: 0.2rem;
+}
 .main .content .content-line4 {
   width: cal(99.6%);
-  height: 2.9rem;
+  height: 100%;
   margin: 0.2rem 0.2rem;
   display: flex;
 }

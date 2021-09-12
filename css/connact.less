@@ -37,7 +37,7 @@
     // position: fixed;
     bottom: 1.3rem;
     justify-content: center;
-    .content-first{
+    .content-first1{
         margin: 0.2rem 0.2rem;
         padding: 0.3rem 0rem;
         width: cal(100%-0.4rem);
@@ -82,6 +82,7 @@
         width: cal(100%-0.4rem);
         height: 1rem;
         background: #EFF8FF;
+        padding-bottom: 0.5rem;
         // display: flex;
         p{
             margin-left: 0.4rem;
@@ -178,10 +179,363 @@
             line-height: 1rem;
             font-weight: bold;
         }
+        .changeTab{
+            width: cal(100%-0.4rem);
+            margin: 0 0.2rem;
+            height: 100%;
+            margin-top: 0.5rem;
+            // background: #23BF5E;
+            #nav{
+                width: cal(100%-0.4rem);
+                height: 1.2rem;
+                line-height: 1.2rem;
+                font-size: 0.4rem;
+                color: #666;
+                // background: orange;
+                ul{
+                    display: flex;
+                    .act{
+                        font-weight: bold;
+                        color: #000;
+                        border-bottom: 0.02rem solid #979b99;
+                    }
+                   
+                    li{
+                        float: left;
+                        flex: 1;
+                        text-align: center;
+                    }
+                } 
+               
+            }
+            #tabContent{
+                width: cal(100%-0.4rem);
+                height: 100%;
+                margin: 0 0.2rem;
+                .action{
+                    display: block;
+                }
+                .tab{
+                    height:100%;
+                    p{
+                        margin-top: 0.5rem;
+                    }
+                    h1{
+                        font-weight: bold;
+                        font-size: 0.45rem;
+                        margin: 0.4rem 0rem;
+                    }
+                    .tabLine1{
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: start;
+                        align-content: start;
+                        .item {
+                            flex: 0 0 auto;
+                            margin: 0.2rem;
+                            padding: 0.2rem 0.2rem;
+                            border-radius: 0.2rem;
+                            font-size: 0.35rem;
+                            color: #666;
+                            background: rgb(231, 229, 229);
+                          }
+                          p{
+                              color: #ccc;
+                              margin-top: 0.5rem;
+                          }
+                    }
+                    .tabLine2{
+                        margin:1rem 0rem;
+                        width: cal(100%-0.4rem);
+                        height: 1rem;
+                        text-align: center;
+                        border-radius: 0.2rem;
+                        background: #23BF5E;
+                        span{
+                            color: #fff;font-size: 0.45rem;
+                            font-weight: bold;
+                            line-height: 1rem;
+                            
+                        }
+                      }
+                    //   毕业学校
+                    .tab2Line1{
+                        margin-top: 0.5rem;
+                        span{
+                            padding: 0.4rem 0;
+                        }
+                        span:first-child{
+                            font-size: 0.45rem;
+                            font-weight: bold;
+                        }
+                        span:nth-child(2){
+                            font-size: 0.45rem;
+                        }
+                    } 
+                    .tab4Line1{
+                        width: 100%;
+                        height:100%;
+                        margin: 0.2rem 0;
+                        // background: chartreuse;
+                        .left-line2{
+                            width: 100%;
+                            height: 100%;
+                            .left-line2-top{
+                                width: calc(100% - 0.04rem);
+                                border: 0.02rem solid #9FCAB1;
+                                border-radius: 0.1rem;
+                                height: 1.5rem;
+                                .area-textarea{
+                                    width: 100%;
+                                    height: 1.5rem;
+                                    // background: chartreuse;
+                                    .textarea-content{
+                                        width: 100%;
+                                        height: 1.5rem;
+                                        border-radius: 0.05rem;
+                                        background: 0 0;
+                                        overflow-x: hidden;
+                                        overflow-y: auto;
+                                        border: 0;
+                                        color: #bfbfbf;
+                                        resize: none;
+                                        font-size: 0.25rem;
+                                        line-height: normal;
+                                        text-align: left;
+                                        display: inline;
+                                    }
+                                }
+                            }
+                            .left-line2-bottom{
+                                width: 100%;
+                                height: 0.9rem;
+                                display: flex;
+                                margin-top: 0.2rem;
+                                span{
+                                    width: 0.7rem;
+                                    font-size: 0.7rem;
+                                    line-height: 0.7rem;
+                                    margin: 0 0.1rem;
+                                }
+                                .comment{
+                                    flex: 1;
+                                    display: inline-block;
+                                    height: 0.7rem;
+                                    color: #fff;
+                                    line-height: 0.7rem;
+                                    span{
+                                        width: 1.5rem;
+                                        background: #9FCAB1;
+                                        padding: 0rem 0.2rem;
+                                        border-radius: 0.3rem;
+                                        float: right;
+                                        text-align: center;
+                                        font-size: 0.3rem;
+                                    }
+                                }
+                            }
+                        }
+                        .left-line3{
+                            width: 100%;
+                            height: 100%;
+                            .left-line3-title{
+                                width: 1.5rem;
+                                height: 0.7rem;
+                                line-height: 0.7rem;
+                                text-align: center;
+                                font-size: 0.45rem;
+                                border: 0.01rem solid #9FCAB1;
+                                border-bottom: none;
+                                border-top-right-radius: 0.1rem;
+                                border-top-left-radius: 0.1rem;
+                                &::after{
+                                    content: "";
+                                    display: block; 
+                                    width: calc(100% - 2rem);
+                                    height: 0.01rem;
+                                    background: #9FCAB1;
+                                    position: absolute;
+                                    margin-left: 1.5rem;
+                                    transition: all 0.5s ease
+                                }
+                            }
+                            .left-line3-comment{
+                                float: right;
+                                margin-top: -0.6rem;
+                                .comment-number{
+                                    font-size: 0.25rem;
+                                    .cn-number{
+                                        color: #9FCAB1;
+                                        font-size: 0.45rem;
+                                    }
+                                }
+                            }
+                        }
+                        .left-line4{
+                            font-size: 0.36rem;
+                            height: 0.7rem;
+                            border-left:0.1rem solid olivedrab;
+                            margin-top: 0.5rem;
+                            span{
+                                padding-left: 0.2rem;
+                                line-height: 0.7rem;
+                            }
+                        }
+                        .left-line5{
+                            margin-top: 0.2rem;
+                            height: 100%;
+                            .hotComent{
+                                width: 100%;
+                                height: 100%;
+                                margin-top: 0.2rem;
+                                border-bottom: 0.01rem solid #9FCAB1;
+                                .hotComent-left{
+                                    float: left;
+                                    width: 1rem;
+                                    height: 1.2rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.4rem;
+                                    .hotComent-left-img{
+                                        width: 1.2rem;
+                                        height: 1.2rem;
+                                        border-radius: 0.2rem;
+                                    }
+                                }
+                                .hotComent-right{
+                                    height: 100%;
+                                    p{
+                                        height: 0.5rem;
+                                        line-height: 0.5rem;
+                                        color: #222;
+                                        &:first-child span:first-child{
+                                            margin: 0 0;
+                                            float: left;
+                                            color: #82a18f;
+                                            font-size: 0.3rem;
+                                        }
+                                        &:first-child span:nth-child(2){
+                                            float: left;
+                                            margin-left: 0.1rem;
+                                        }
+                                        &:first-child span:last-child{
+                                            float: right;
+                                            // margin-left: 0.4rem;
+                                            color: #222;
+                                        }
+                                        &:nth-child(3) span{
+                                            float: right;
+                                            line-height: 0.5rem;
+                                            height: 0.5rem;
+                                            font-size: 0.3rem;
+                                            color: #222;
+                                            margin: 0 0.2rem;
+                                            cursor: pointer;
+                                        }
+                                        &:nth-child(3) span:hover{
+                                            transform: scale(1.1);
+                                            transition: all 0.6s;
+                                        }
+                                    }
+                                    .repContent{
+                                        height: 0.5rem;
+                                        display: inline-block;
+                                        line-height: 0.5rem;
+                                        display: flex;
+                                        display: none;
+                                        margin:0.2rem 0.2rem;
+                                        img{
+                                            float: left;
+                                            width: 0.5rem;
+                                            height: 0.5rem;
+                                            line-height: 0.5rem;
+                                            margin: 0rem 0.2rem;
+                                            border-radius: 50%;
+                                        }
+                                        span:nth-child(2){
+                                            float: left;
+                                        }
+                                        .ct{
+                                            float: left;
+                                            display: block;
+                                            color: #333;
+                                            flex: 1;
+                                        }
+                                        .del{
+                                            width: 1.5rem;
+                                            text-align: center;
+                                            display: block;
+                                            border-radius: 0.1rem;
+                                            float: right;
+                                            color: #C5DEC5;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                                .hotComent-bottom{
+                                    height: 100%;
+                                    display: none;
+                                    // background: chartreuse;
+                                    img{
+                                        float: left;
+                                        width: 0.7rem;
+                                        height: 0.7rem;
+                                        line-height: 0.7rem;
+                                        margin: 0 0.2rem;
+                                        border-radius: 50%;
+                                    }
+                                    span{
+                                        display: block;
+                                        line-height: 0.7rem;
+                                        margin-bottom: 0.3rem;
+                                    }
+                                    .area-textarea{
+                                        width: 100%;
+                                        margin-left: 0.2rem;
+                                        height: 0.7rem;
+                                        border: 0.01rem solid #9FCAB1;
+                                        .textarea-content{
+                                            width: calc(100% - 0.2rem);
+                                            border-radius: 0.1rem;
+                                            background: 0 0;
+                                            overflow-x: hidden;
+                                            overflow-y: auto;
+                                            border: 0;
+                                            color: #bfbfbf;
+                                            resize: none;
+                                            font-size: 0.25rem;
+                                            line-height: normal;
+                                            text-align: left;
+                                            display: inline;
+                                        }
+                                    }
+                                    p{
+                                        height: 0.7rem;
+                                        margin: 0.1rem 0.2rem;
+                                        .rep{
+                                            float: right;
+                                            width: 1.2rem;
+                                            height: 0.5rem;
+                                            line-height: 0.5rem;
+                                            background: #9FCAB1;
+                                            text-align: center;
+                                            margin: 0rem 0.1rem;
+                                            border-radius: 0.2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
         .content-line4{
             // background: chartreuse;
             width: cal(100%-0.4rem);
-            height: 2.9rem;
+            height: 100%;
             margin:0.2rem 0.2rem;
             display: flex;
             div{
@@ -237,7 +591,6 @@
         }
 }
 }
-
 .footer {
     position: fixed;
     bottom: 0;

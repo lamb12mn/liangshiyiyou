@@ -191,6 +191,8 @@
 .main .content .content-line2 span {
   color: #FE6206;
   line-height: 1rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
   margin-left: 0.2rem;
   text-align: center;
   font-size: 0.4rem;
