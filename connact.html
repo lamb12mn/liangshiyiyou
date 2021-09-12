@@ -36,6 +36,9 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div class="loadingImage"></div>
+    </div>
     <div class="header">
         <a class="left iconfont icon-zuojiantou location" href="question.html"></a>
         <div class="right"></div>
@@ -153,6 +156,7 @@
             $('.mask').hide()
             $('html').removeClass('scroll-mask')
         })
+        $("#loading").fadeOut(1500);
     </script>
 </body>
 
