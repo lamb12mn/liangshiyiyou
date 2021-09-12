@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>loading加载</title>
+<script src="./js/flexible.js"></script>
+<link rel="stylesheet" href="./css/font.css">
+<!-- <link rel="stylesheet" href="./css/test.css"> -->
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/cont.css">
+<script crossorigin="anonymous" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/connact.js"></script>
+<style>
+.container {
+  width: calc(100%-0.4rem);
+  height: 100%;
+}
+.container .left-line2 {
+  width: 100%;
+  height: 100%;
+}
+.container .left-line2 .left-line2-top {
+  width: calc(100% - 0.04rem);
+  border: 0.02rem solid #9FCAB1;
+  border-radius: 0.1rem;
+  height: 1.5rem;
+}
+.container .left-line2 .left-line2-top .area-textarea {
+  width: 100%;
+  height: 1.5rem;
+}
+.container .left-line2 .left-line2-top .area-textarea .textarea-content {
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 0.05rem;
+  background: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 0;
+  color: #bfbfbf;
+  resize: none;
+  line-height: normal;
+  text-align: left;
+  display: inline;
+}
+.container .left-line2 .left-line2-bottom {
+  width: 100%;
+  height: 0.9rem;
+  display: flex;
+  margin-top: 0.2rem;
+}
+.container .left-line2 .left-line2-bottom span {
+  width: 0.7rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin: 0 0.1rem;
+}
+.container .left-line2 .left-line2-bottom .comment {
+  flex: 1;
+  display: inline-block;
+  height: 0.7rem;
+  line-height: 0.7rem;
+}
+.container .left-line2 .left-line2-bottom .comment span {
+  width: 1.5rem;
+  background: #9FCAB1;
+  padding: 0rem 0.2rem;
+  border-radius: 0.3rem;
+  float: right;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.container .left-line3 {
+  width: 100%;
+  height: 100%;
+}
+.container .left-line3 .left-line3-title {
+  width: 1.5rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  font-size: 0.45rem;
+  border: 0.01rem solid #9FCAB1;
+  border-bottom: none;
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+}
+.container .left-line3 .left-line3-title::after {
+  content: "";
+  display: block;
+  width: calc(100% - 2rem);
+  height: 0.01rem;
+  background: #9FCAB1;
+  position: absolute;
+  margin-left: 1.5rem;
+  transition: all 0.5s ease;
+}
+.container .left-line3 .left-line3-comment {
+  float: right;
+  margin-top: -0.6rem;
+}
+.container .left-line3 .left-line3-comment .comment-number {
+  font-size: 0.25rem;
+}
+.container .left-line3 .left-line3-comment .comment-number .cn-number {
+  font-size: 0.45rem;
+}
+.container .left-line4 {
+  font-size: 0.36rem;
+  height: 0.7rem;
+  border-left: 0.1rem solid olivedrab;
+  margin-top: 0.5rem;
+}
+.container .left-line4 span {
+  padding-left: 0.2rem;
+  line-height: 0.7rem;
+}
+.container .left-line5 {
+  margin-top: 0.2rem;
+  height: 100%;
+}
+.container .left-line5 .hotComent {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.2rem;
+  border-bottom: 0.01rem solid #9FCAB1;
+}
+.container .left-line5 .hotComent .hotComent-left {
+  float: left;
+  width: 1rem;
+  height: 1.2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.4rem;
+}
+.container .left-line5 .hotComent .hotComent-left .hotComent-left-img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.2rem;
+}
+.container .left-line5 .hotComent .hotComent-right {
+  height: 100%;
+}
+.container .left-line5 .hotComent .hotComent-right p {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  color: #222;
+}
+.container .left-line5 .hotComent .hotComent-right p:first-child span:first-child {
+  float: left;
+  color: #82a18f;
+  font-size: 0.3rem;
+}
+.container .left-line5 .hotComent .hotComent-right p:first-child span:nth-child(2) {
+  float: left;
+  margin-left: 0.2rem;
+}
+.container .left-line5 .hotComent .hotComent-right p:first-child span:last-child {
+  float: right;
+  margin-left: 0.4rem;
+  color: #222;
+}
+.container .left-line5 .hotComent .hotComent-right p:nth-child(3) span {
+  float: right;
+  line-height: 0.5rem;
+  height: 0.5rem;
+  font-size: 0.3rem;
+  color: #222;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.container .left-line5 .hotComent .hotComent-right p:nth-child(3) span:hover {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+.container .left-line5 .hotComent .hotComent-right .repContent {
+  height: 0.5rem;
+  display: inline-block;
+  line-height: 0.5rem;
+  display: flex;
+  display: none;
+  margin: 0.2rem 0.2rem;
+}
+.container .left-line5 .hotComent .hotComent-right .repContent img {
+  float: left;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  margin: 0rem 0.2rem;
+  border-radius: 50%;
+}
+.container .left-line5 .hotComent .hotComent-right .repContent span:nth-child(2) {
+  float: left;
+}
+.container .left-line5 .hotComent .hotComent-right .repContent .ct {
+  float: left;
+  display: block;
+  color: #333;
+  flex: 1;
+}
+.container .left-line5 .hotComent .hotComent-right .repContent .del {
+  width: 1.5rem;
+  text-align: center;
+  display: block;
+  border-radius: 0.1rem;
+  float: right;
+  color: #C5DEC5;
+  cursor: pointer;
+}
+.container .left-line5 .hotComent .hotComent-bottom {
+  height: 100%;
+  display: none;
+}
+.container .left-line5 .hotComent .hotComent-bottom img {
+  float: left;
+  width: 0.7rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+}
+.container .left-line5 .hotComent .hotComent-bottom span {
+  display: block;
+  line-height: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.container .left-line5 .hotComent .hotComent-bottom .area-textarea {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #9FCAB1;
+}
+.container .left-line5 .hotComent .hotComent-bottom .area-textarea .textarea-content {
+  width: calc(100% - 0.2rem);
+  border-radius: 0.1rem;
+  background: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 0;
+  color: #bfbfbf;
+  resize: none;
+  line-height: normal;
+  text-align: left;
+  display: inline;
+}
+.container .left-line5 .hotComent .hotComent-bottom p {
+  height: 0.7rem;
+  margin: 0.1rem 0.2rem;
+}
+.container .left-line5 .hotComent .hotComent-bottom p .rep {
+  float: right;
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background: #9FCAB1;
+  text-align: center;
+  margin: 0rem 0.1rem;
+  border-radius: 0.2rem;
+}
+
+</style>
+    <script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-line2">
+            <div class="left-line2-top">
+                <div class="area-textarea">
+                    <textarea class="textarea-content" name="" node-type="textarea" id="txtcontent"
+                        placeholder="有事没事说两句..."></textarea>
+                </div>
+            </div>
+            <div class="left-line2-bottom">
+                <span class="iconfont icon-xiaolian"></span>
+                <span class="iconfont icon-dianzan"></span>
+                <div class="comment"><span id="btnAdd">畅言一下</span></div>
+            </div>
+        </div>
+        <div class="left-line3">
+            <div class="left-line3-title">评论</div>
+            <div class="left-line3-comment">
+                <span class="comment-number">
+                    <span class="cn-number">1902</span>人参与,
+                    <span class="cn-number">671</span>条评论
+                </span>
+            </div>
+        </div>
+        <div class="left-line4">
+            <span>热门评论</span>
+        </div>
+        <div class="left-line5" id="tbList">
+            <div class="hotComent">
+                <div class="hotComent-left"><img class="hotComent-left-img" src="./image/tou1.jpg" alt=""></div>
+                <div class="hotComent-right">
+                    <p>
+                        <span>不知道叫啥</span><span>[23232.@qq.com]</span><span>2018年8月15日14:45:34</span>
+                    </p>
+                    <p>上线了上线了三斜杠</p>
+                    <p>
+                        <span class="delete">删除</span>
+                        <span class="iconfont icon-fenxiang"></span>
+                        <span class="iconfont icon-pingjia"></span>
+                        <span class="iconfont icon-dianzan"></span>
+                        <span class="reponse">回复</span>
+                    </p>
+                    <div class="repContent">
+                        <img src="./image/tou2.jpg" alt=""><span>1刘德华:</span>
+                        <span class="ct">但是</span>
+                        <span class="del">删除评论</span>
+                    </div>
+                </div>
+                <div class="hotComent-bottom">
+                    <img src="./image/tou2.jpg" alt=""><span>1刘德华:</span>
+                    <div class="area-textarea">
+                        <textarea class="textarea-content" name="" node-type="textarea" id="repContent"
+                            placeholder="有事没事说两句..."></textarea>
+                    </div>
+                    <p><span class="rep">回复</span></p>
+                </div>
+                <!-- <div class="repContent">
+                </div> -->
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
