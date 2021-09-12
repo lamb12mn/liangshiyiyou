@@ -24,6 +24,9 @@
     <script crossorigin="anonymous" integrity="sha384-jvxZtB6PRIuRe1TKuwNcAwwN/9+P2UC8XaofZ86an5ZNMk8tOXlGH4MERr8yG7iN" src="https://lib.baomitu.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
 </head>
 <body data-role="page" >
+    <div id="loading">
+        <div class="loadingImage"></div>
+    </div>
     <div class="header">
         <div class="left"><i class="iconfont icon-dingwei location"></i>重庆</div>
         <div class="right">
@@ -181,7 +184,7 @@
             // console.log($(this).attr("data"));
             window.location.href='share.html?id='+$(this).attr("data");
         })
-      
+        $("#loading").fadeOut(1500);
 	</script>
 </body>
 </html>

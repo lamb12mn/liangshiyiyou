@@ -28,6 +28,9 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div class="loadingImage"></div>
+    </div>
     <div class="header">
         <div class="left"><i class="iconfont icon-dingwei location"></i>重庆</div>
         <div class="right">
@@ -300,6 +303,7 @@
             $('html').removeClass('scroll-mask')
         })
     })
+    $("#loading").fadeOut(1500);
     </script>
 </body>
 

@@ -11,12 +11,15 @@
     <title>学习</title>
     <script src="./js/zepto.min.js"></script>
     <script src="./js/flexible.js"></script>
-    <!-- <script src="https://s2.pstatp.com/cdn/expire-1-M/jquery/1.7.1/jquery.min.js"></script> -->
+    <script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
     <!-- <script src="./js/bootstrap.js"></script> -->
     <script src="./js/data.js"></script>
 </head>
 <body>
+    <div id="loading">
+        <div class="loadingImage"></div>
+    </div>
     <div class="header">
         <p><span class="title">学习中心</span><i class="iconfont icon-xinxi"></i></p>
         <p class="title-c">登陆查看您的课程信息</p>
@@ -142,7 +145,10 @@
         <a href="study.html"><div style="color: rgb(14, 233, 160);"><i class="iconfont icon-course"></i><span>学习</span></div></a>
         <a href="user.html"><div><i class="iconfont icon-wode"></i><span>我的</span></div></a>
     </div>
-    <script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+  <script>
+$("#loading").fadeOut(1500);
+
+  </script>
 
 </body>
 </html>

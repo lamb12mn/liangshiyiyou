@@ -30,6 +30,9 @@
 </head>
 
 <body data-role="page">
+    <div id="loading">
+        <div class="loadingImage"></div>
+    </div>
     <div class="header">
         <a class="left iconfont icon-zuojiantou location" href="index.html"></a>
         <div class="right">
@@ -178,6 +181,8 @@
     if(getQueryString('id')==null){
         $(".sub").html("数学");
     }
+    $("#loading").fadeOut(1500);
+
     </script>
 </body>
 

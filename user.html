@@ -21,6 +21,9 @@
     <script src="./js/data.js"></script>
 </head>
 <body>
+    <div id="loading">
+        <div class="loadingImage"></div>
+    </div>
     <div class="header">
        <div class="aut btn upload"><input type="file" class="upload_pic" id="upload" placeholder="更换头像"/></div>
        <div class="con">
@@ -170,6 +173,7 @@
                 }
             }, false);
         }
+        $("#loading").fadeOut(1500);
         
     </script>
 </body>
